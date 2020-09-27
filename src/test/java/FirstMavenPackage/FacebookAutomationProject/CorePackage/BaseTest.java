@@ -43,11 +43,11 @@ public class BaseTest {
 		config = new Properties(); 
 		ObjectRepo = new Properties(); 
 		
-		fis = new FileInputStream(Userpath+"\\src\\Config\\config.properties");
-		locator = new FileInputStream(Userpath+"\\src\\ObjectRepo\\Locators.properties");
+		System.out.println(Userpath);
+		
+		fis = new FileInputStream(Userpath+"\\src\\main\\java\\Config\\config.properties");
 		
 		config.load(fis);
-		ObjectRepo.load(locator);
 		
 		String browserValue = config.getProperty("browser");
 		
@@ -55,7 +55,7 @@ public class BaseTest {
 		
 		if(browserValue.equalsIgnoreCase("firefox")){
 			
-			System.setProperty("webdriver.gecko.driver", Userpath+"\\Driver\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", Userpath+"\\src\\main\\java\\Driver\\geckodriver.exe");
 			
 			driver = new FirefoxDriver();
 			
@@ -65,7 +65,7 @@ public class BaseTest {
 		
 		else if(browserValue.equalsIgnoreCase("Chrome")){
 			
-			System.setProperty("webdriver.chrome.driver", Userpath+"\\Driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", Userpath+"\\src\\main\\java\\Driver\\chromedriver.exe");
 		
 		    driver = new ChromeDriver();
 		    
@@ -75,7 +75,7 @@ public class BaseTest {
 		
 		else if(browserValue.equalsIgnoreCase("ie")){
 			
-			System.setProperty("webdriver.ie.driver", Userpath+"\\Driver\\IEDriverServer.exe");
+			System.setProperty("webdriver.ie.driver", Userpath+"\\src\\main\\java\\Driver\\IEDriverServer.exe");
 			
 		    driver = new InternetExplorerDriver();
 		    

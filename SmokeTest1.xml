@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
   <classes>
-  <class name="FirstMavenPackage.FacebookAutomationProject.FacebookLoginPage"></class>
+  <class name="FirstMavenPackage.FacebookAutomationProject.FacebookLoginTestCases"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

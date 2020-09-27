@@ -15,7 +15,7 @@ public class FacebookLoginPage {
 	public WebElement UserId;
 	@FindBy(id="pass")
 	public WebElement Password;
-	@FindBy(id="login")
+	@FindBy(name="login")
 	public WebElement LoginButton;
 	@FindBy(xpath="//a[contains(text(),'Forgotten account?')")
 	public WebElement ForgetPassword;
