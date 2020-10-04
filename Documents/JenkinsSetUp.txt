@@ -1,0 +1,31 @@
+Jenkins SetUp:
+
+1. download jenkins war
+2. go to cmd and go to war path : java -jar jenkins.war
+3. Admin Password saved at : C:\Users\toshiba\.jenkins\secrets\initialAdminPassword
+4. when u get Jenkins up and running it means now jenkins ready to work on
+5. go to any browser and type http://localhost:8080 and it ask for Admin Password
+6. go to default setting and it takes time to install all plugins(u can see the log in cmd for same)
+7. once above done.. it goes to Create First Admin User(AkhileshGuptaAutomation) and Password(As SAME)
+8. next and Finish
+---------------------------
+
+Project SetUp Part
+
+Need to maven plugin to handle Maven Projet
+1. Manage Jenkins->Manage Plugin-> Available -> search Maven --> select all and Install it
+Create Maven Project
+configure -->Build
+D:\MavenProjectSample\SeleniumAutomationProject\pom.xml
+
+2. https://github.com/SeleniumCucumberTrainer/SeleniumAutomationProject.git
+
+
+Global Tool onfiguration:
+C:\Program Files\Git\bin\git.exe
+D:\All_Jar\apache-maven-3.5.4
+C:\Program Files (x86)\Java\jdk1.8.0_171
+
+
+
+

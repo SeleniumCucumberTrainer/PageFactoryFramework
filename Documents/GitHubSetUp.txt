@@ -1,0 +1,23 @@
+
+1. Downlaod gitHub from https://git-scm.com/download/win for cmd operations and install it
+
+
+2. once install , go to start and All Programe , choose git bash 
+
+3. push the project in GIT
+
+4. Then in Jenkins
+
+Source Code Management
+
+give the path of git
+
+
+
+GITHUB Command:
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/SeleniumCucumberTrainer/Akhilesh.git
+git push -u origin master
